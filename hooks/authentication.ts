@@ -43,6 +43,7 @@ export function useAuthenticate() {
       if (user) {
         const loginUser: User = {
           uid: user.uid,
+          name: '',
           isAnonymous: user.isAnonymous,
         };
         setUser(loginUser);
