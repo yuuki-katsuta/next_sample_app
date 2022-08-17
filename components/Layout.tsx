@@ -1,3 +1,5 @@
+import { ToastContainer } from 'react-toastify';
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
@@ -19,6 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </nav>
       <div className='container'>{children}</div>
+      <ToastContainer />
     </div>
   );
 }
