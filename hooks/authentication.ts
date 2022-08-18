@@ -30,6 +30,7 @@ const createUserIfNotFound = async (user: User) => {
   //ドキュメントIDを指定してデータを追加
   await setDoc(userRef, {
     name: 'taro' + new Date().getTime(),
+    uid: user.uid,
   });
 };
 
